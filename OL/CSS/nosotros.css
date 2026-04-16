@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 30px;
+    background-color:#003851;
+}
+
+
+nav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #002535;
+    z-index: 1000;
+    border-bottom: solid 2px;
+    border-color: #22646e;
+    font-family: "EB Garamond", serif;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav li a:hover {
+   color:#458e99;
+}
+
+/* HEADER */
+header{
+    background-color:#1d8085;
+    text-align: center;
+}
+
+#ocean{
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    background-color: #002535;
+    background-size: cover;
+    background-position: center;
+}
+
+#frase{
+    color: #ffffff;
+    font-family: "Sekuya", system-ui;
+    text-align: center;
+    font-style: normal;
+    background-color: #002535;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 12px;
+    font-size: 26px;
+}
+
+
+
+#intro{
+    text-align: center;
+    color: white;
+    margin: 80px 0 50px;
+    font-family: "Sekuya";
+    font-size: 45px;
+    text-shadow: 2px 2px 4px black;
+   
+  
+}
+
+
+.contenedor{
+    display:grid;
+    grid-template-columns: repeat(2,250px);
+   justify-content: center;
+    gap: 250px;
+    padding: 30px 160px 60px 40px;
+   
+}
+
+
+.card{
+    width: 200px;
+    height: 300px;
+}
+
+
+.card-inner{
+    width: 390px;
+    height: 490px;
+    position: absolute; 
+    top:0; 
+    left:0; 
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+    perspective: 1000px;
+}
+
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-front{
+    background-color: #1d8085;
+    color: white;
+    box-shadow: 5px 5px 10px black;
+    font-size: 30px;
+     font-family: "Sekuya";
+    text-shadow: 2px 2px 4px black;
+   
+
+}
+
+
+.card-back{
+    width: 390px;
+    background-size: cover;
+    align-items: center;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 10px;
+    position: absolute; 
+    top:0; 
+    left:0; 
+    height: 490px;
+
+}
+
+.card-back img{
+
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+
+}
+

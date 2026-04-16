@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-top: 20px;
+    background-color: #003851;
+    background-size: cover;
+    color: white;
+}
+
+
+header {
+    width: 100%;
+}
+
+#titobjetivos {
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    background-color: #002535;
+    background-size: cover;
+    background-position: center;
+}
+
+#fraseob {
+    color: #ffffff;
+    font-family: "Sekuya", system-ui;
+    text-align: center;
+    font-style: normal;
+    background-color: #002535;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 12px;
+    font-size: 26px;
+}
+
+
+nav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #002535;
+    z-index: 1000;
+    border-bottom: solid 2px;
+    border-color: #22646e;
+    font-family: "EB Garamond", serif;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav li a:hover {
+   color:#458e99;
+}
+
+.intro {
+    text-align: center;
+    margin: 50px auto 30px auto;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.intro h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    font-family: "Sekuya", system-ui;
+}
+
+.intro p {
+    font-size: 22px;
+    line-height: 1.7;
+    color: #d8f3ff;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/*Contenedor de tarjetas*/
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 40px 60px 40px;
+}
+
+/*Tarjetas*/
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 450px;
+    perspective: 1000px;
+    flex: 0 1 240px;
+}
+
+/*Efecto zoom*/
+.flip-card:hover {
+    transform: scale(1.06);
+    transition: transform 0.3s ease;
+}
+
+/*Interior*/
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/*Efecto vuelta*/
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/*Caras*/
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 18px;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/*Frente*/
+.flip-card-front {
+    background-color: #5dacf7;
+    color: #002535;
+}
+
+.flip-card-front h2 {
+    font-size: 26px;
+    line-height: 1.3;
+    font-family: "Sekuya", system-ui;
+}
+
+/*Reverso*/
+.flip-card-back {
+    background-color: #1d8085;
+    color: white;
+    transform: rotateY(180deg);
+    overflow-y: auto;
+}
+
+.flip-card-back p {
+    font-size: 20px;
+    line-height: 1.45;
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+footer {
+    background-color: #002535;
+    border-top: solid 2px #22646e;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 30px;
+}

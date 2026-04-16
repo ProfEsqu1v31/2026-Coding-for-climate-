@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   margin: 0;
+    margin-top: 20px;
+    background-color: #003851;
+    background-size: cover;
+    color: white;
+      font-family: "EB Garamond", serif;
+    
+}
+p{
+    font-size: 20px;
+       text-align: justify;
+}
+
+li{
+    font-size: 20px;
+       text-align: justify;
+}
+
+header{
+  width: 100%;
+}
+
+#titprom{
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    background-color: #002535;
+    background-size: cover;
+    background-position: center;
+}
+
+#fraseprom{
+    color: #ffffff;
+    font-family: "Sekuya", system-ui;
+    text-align: center;
+    font-style: normal;
+    background-color: #002535;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 12px;
+    font-size: 26px;
+}
+
+nav ul{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #002535;
+    z-index: 1000;
+    border-bottom: solid 2px;
+    border-color: #22646e;
+    font-family: "EB Garamond", serif;
+}
+
+nav li{
+  margin: 0 1rem;
+}
+
+nav li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav li a:hover{
+   color:#458e99;
+}
+
+.oceans1{
+    width: 100%;
+    background-color: #22646e;
+        color: #bfd2d9;
+    
+}
+
+.oceans2{
+    width: 100%;
+    background-color: #002535;
+        color: #bfd2d9;
+}
+
+main{
+   margin-top: 40px;
+}
+
+.oceans7{
+    text-align: center;
+        color: #bfd2d9;
+}
+
+.oceans3 h1{
+   border: 2px solid #1d8085;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 900px;
+    color: #bfd2d9;
+           
+    text-align: center;
+    font-size: 32px;
+    
+}
+
+
+.Contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.oceans4{
+  border: 2px solid #1d8085;
+    border-radius: 12px;
+    padding: 25px;
+    width: 350px;       
+    min-height: 320px;  
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    font-size: 18px;
+   
+        color: #bfd2d9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+background-image: url("fondo10.png.png");
+ transition: transform 0.3s ease;
+}
+.oceans5{
+  border: 2px solid #1d8085;
+    border-radius: 12px;
+    padding: 25px;
+    width: 350px;        
+    min-height: 320px;  
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    font-size: 18px;
+ 
+        color: #bfd2d9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+background-image: url("fondo10.png.png");
+ transition: transform 0.3s ease;
+}
+.oceans6{
+   border: 2px solid #1d8085;
+    border-radius: 12px;
+    padding: 25px;
+    width: 350px;       
+    min-height: 320px;   
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    font-size: 18px;
+
+        color: #bfd2d9;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+background-image: url("fondo10.png.png");
+ transition: transform 0.3s ease;
+}
+.oceans9{
+    border: 2px solid #1d8085;
+    border-radius: 12px;
+    padding: 25px;
+    width: 350px;        
+    min-height: 320px;   
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    font-size: 18px;
+    color: #bfd2d9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+background-image: url("fondo10.png.png");
+ transition: transform 0.3s ease;
+}
+
+
+.oceans10{
+    width: 90%;
+    margin: 50px auto;
+    line-height: 1.8;
+    font-size: 20px;
+}
+.titulo1{
+  font-family: "Sekuya", system-ui;
+    color: #bfd2d9;
+}
+.titulo2{
+  font-family: "Sekuya", system-ui;
+    color: #bfd2d9;
+}
+.titulo3{
+  font-family: "Sekuya", system-ui;
+    color: #bfd2d9;
+}
+.titulo4{
+  font-family: "Sekuya", system-ui;
+    color: #bfd2d9;
+}
+.titulo5{
+  font-family: "Sekuya", system-ui;
+    color: #bfd2d9;
+}
+.titulo6{
+  font-family: "Sekuya", system-ui;
+    color: #bfd2d9;
+}
+.titulo7{
+    border: 2px solid #1d8085;
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+
+    font-family: "Sekuya", system-ui;
+    color: #bfd2d9;
+    text-align: center;
+}
+
+.lista-argentina{
+    width: 80%;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #bfd2d9;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.lista-argentina li{
+      margin-bottom: 8px;
+}
+.oceans4:hover{
+ transform: scale(1.05); 
+}
+.oceans5:hover{
+ transform: scale(1.05); 
+}
+.oceans6:hover{
+     transform: scale(1.05); 
+}
+.oceans9:hover{
+    transform: scale(1.05); 
+}
+
+.flip-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+     overflow: visible;
+}
+
+
+.flip-card {
+    perspective: 1000px;
+     width: 350px;
+    height: 350px;
+        z-index: 1;
+            width: 350px;
+    height: 350px;
+    flex: 0 0 350px;
+}
+
+
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+     z-index: 10;
+}
+
+
+.flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #1d8085;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    backface-visibility: hidden;
+
+    background-image: url("fondo10.png.png");
+    background-size: cover;
+    background-position: center;
+
+    color: #bfd2d9;
+}
+
+
+.flip-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.flip-back {
+    transform: rotateY(180deg);
+    overflow-y: auto;
+    text-align: left;
+     max-height: 100%;
+    padding-right: 10px;
+}
+.flip-back p{
+    font-size: 20px;
+}
+.flip-back li {
+    font-size: 20px;
+}
