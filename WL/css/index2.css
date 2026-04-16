@@ -1,0 +1,253 @@
+*{  font-family: "Alatsi", sans-serif;
+    font-style: normal;
+    margin:0%; 
+    padding:1px;
+}
+    
+body{
+   
+    background: linear-gradient(to bottom, #022f40, #38aecc, #022f40, rgb(56, 174, 204));
+    font-size: 23px;
+}
+.barra-superior{
+    display: flex;
+    margin: 5px 10px;
+    padding: 1px 15px;
+
+    border: 2px solid #79beee;
+    border-radius: 25px;
+
+    background-color:rgba(9, 42, 51, 0.95);
+    position: fixed;
+    z-index: 1000;
+}
+
+.marca{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+#gota{
+    padding: 0;
+    width: 25px;
+    height: auto;
+    display: block;
+}
+
+#logo{
+    font-size: 27px;
+    margin: 0;
+    color: #d2efff;
+}
+
+.menu{
+   display: flex;
+   margin-left:200px;
+   width:1050px;
+}
+
+.menu ul{
+   display: flex;
+   list-style: none;
+   gap: 60px;
+   margin: 8px;
+   padding: 10px;
+   font-size: 22px;
+}
+
+.menu li a {
+   color: #d2efff;
+   display: inline-block;
+   text-decoration: none;
+  
+ 
+   padding: 5px 15px;
+   border: 2px transparent;
+   border-radius: 30px;
+  
+ 
+   transition: all 0.3s ease;
+}
+
+
+.menu li a:hover {
+   color: #022f40;
+   background-color: #a8e2ff;
+  
+   border-color: #e0f2ff;
+
+
+   transform: scale(1.1);
+}
+
+main.basico{
+    color: #d2efff;
+}
+
+#titulo{
+    font-family: "Archivo Black", sans-serif;
+    font-style: bold;
+    margin-top: 280px;
+    display: block;
+    font-size: 145px;
+    padding: 0 43px;
+    color:#d2efff;
+    text-align: center;
+
+}
+#subtitulo{
+    display: block;
+    text-align: center;    
+    font-size: 22px;
+    padding: 0 43px;
+
+    max-width: 800px; 
+    width: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color:#a8e2ff;
+    
+}
+
+#sub1{
+    font-size: 40px;
+    max-width: 800px;
+    margin-top: 200px;
+    margin-left: 110px;
+    color:#a8e2ff;
+}
+
+
+#sub2{
+    font-size: 40px;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-left: 110px;
+    color:#a8e2ff;
+}
+
+
+#info{
+    display: flex;
+    padding: 40px;
+    text-align:left;
+    font-size: 23px;
+    margin: 100px; /* margen de los costados*/
+    max-width: 1400px; /* ancho */
+    max-height: 800px; /* alto */
+    margin-top: 15px; 
+    margin-bottom: 50px;
+    border: 2px solid #3685AD;
+    padding: 30px;         
+    border-radius: 45px; 
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(../imagenes/pestaÃ±a1.png); /* pestaÃ±a con imagen y capa oscura con opacidad 0.2 */
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+.contenedor-info2-foto {
+    display: flex;
+    align-items: center; 
+    gap: 65px; 
+    margin-bottom: 40px; 
+}
+
+#info2 {
+    margin: 0%;
+    
+    max-width: 800px; 
+    max-height: 800px; 
+    margin-top: 30px; 
+    margin-left: 110px; 
+    margin-bottom: 40px;
+
+    border: 2px solid #3685AD;
+    padding: 30px;         
+    border-radius: 45px; 
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(../imagenes/pestaÃ±a1.png); 
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+.foto-circular {
+    width: 355px; 
+    height: 320px; 
+    border-radius: 30%; 
+    object-fit: cover; 
+    border: 3px solid #3685AD; 
+    flex-shrink: 0; 
+}
+
+
+.etapas {
+    position: relative;
+    margin-top: 90px;
+    line-height: 1.4;
+    max-width: 100%;
+    background-color: rgba(16, 28, 42, 0.6);
+    padding: 80px 40px;
+}
+
+.contenedor-img {
+   position: absolute;
+   top: 20px;    
+   right: 40px;  
+   width: 60px;  
+   height: auto;
+   z-index: 1000; 
+   cursor: pointer;
+}
+
+.logo {
+   width: 100%;
+   height: auto;
+   transition: transform 0.3s ease;
+}
+
+.imagen {
+   position: absolute;
+   top: -10px; 
+   right: -10px; 
+   width: 320px; 
+   height: 320px;
+
+border: 1px #79beee solid;
+   border-radius: 50% 0 50% 50%;
+   object-fit: cover; 
+
+   transform: scale(0);
+   transform-origin: 50% 0%; 
+   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contenedor-img:hover .imagen {
+   transform: scale(1) translate(-10px, 30px); 
+   opacity: 1;
+}
+
+.contenedor-img:hover .logo {
+   transform: scale(0.9);
+}
+
+
+.contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+footer.basico{
+    display: flex;
+    font-size: 20px;
+    color: #ffffff;
+    justify-content:center;
+    margin: 20px 20px;
+    margin-top: 60px;
+}

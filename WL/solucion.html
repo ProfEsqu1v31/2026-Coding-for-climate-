@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/solucion.css">
+</head>
+<body>
+    <header class="barra-superior"> 
+        <div class="marca"> 
+            <img id="gota" src="imagenes/gotaagua.webp" width="30px">
+            <h4 id="logo"> WATER LEAGUE </h4>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href= "index2.html"> Home</a></li>
+                <li><a href= "problematica1.html"> Challenges</a></li>
+                <li><a href= "solucion.html"> Solution</a></li>
+                <li><a href= "prototipo.html"> Prototype</a></li>
+                <li><a href= "nosotros.html"> About Us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+
+    <main class="basico">
+        <section>
+            <h1 id="titulo">Solution</h1>
+            <p id="subtitulo">In Argentina, access to safe water faces a challenge that does not stem from industrial activity, but from the earth itself. That is why we propose this "problem-solving" solution with the aim of improving the lives of many communities.</p>
+            <hr class="linea">
+
+            <h5 id="sep1">INTRODUCTION AND PROBLEM STATEMENT</h5>
+            <h1 id="titulo1">Arsenic in Argentine Aquifers</h1>
+
+            <div class="pestañas">
+                <div class="flip-card" id="pestaña1">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h6>REDUCED FORM</h6> 
+                            <h4>Arsenite — As⁺³</h4> 
+                            <ul id="infopes1">
+                                <li>Present in deep wells and anoxic groundwater</li>
+                                <li>Requires pre-oxidation before treatment</li>
+                                <li>More toxic and difficult to remove directly</li>
+                            </ul>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="imagenes/arsenito.png"> </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" id="pestaña2">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h6>OXIDIZED FORM</h6> 
+                            <h4>Arsenate — As⁺⁵</h4> 
+                            <ul id="infopes1">
+                                <li>Present in oxygenated surface waters</li>
+                                <li>Adheres efficiently to iron flocs</li>
+                                <li>Reference form for coagulation treatment</li>
+                            </ul>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="imagenes/arsenato.png"> </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" id="pestaña3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h6>HEALTH RISK</h6> 
+                            <h4>Chronic Endemic Hydroarsenicism</h4> 
+                            <ul id="infopes1">
+                                <li>Affects regions of the Argentine Pampas plains</li>
+                                <li>Caused by chronic consumption of contaminated water</li>
+                            </ul>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="imagenes/HACRE.png"> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aviso">
+                <h4>MAXIMUM PERMISSIBLE LIMIT ⚠️</h4>
+                <p id="infoaviso">The Argentine Food Code and the World Health Organization establish a maximum concentration limit for arsenic in drinking water.</p>
+                <p id="numero">Maximum allowed: 0.01 mg/L of As</p>
+
+            </div>
+
+            <div id="expl1"> 
+                <h5>FUNCTIONAL PROCESS MAP</h5>
+                <h1>Chemical Oxidation-Assisted Coagulation-Flocculation</h1>
+
+                <p id="text1">Our solution is based on a Chemical Oxidation-Assisted Coagulation-Flocculation process. This method ensures that arsenic, which is naturally dissolved in the water, is transformed into solid particles that can be physically removed in just four steps.</p>
+
+            </div>
+
+            <hr class="linea2">
+
+            <div class="etapas">
+                <div id="etapa1">
+                    <h3>STEP 1: Aeration and Chemical Reaction</h3>
+                    <p>The process begins by oxygenating the raw well water through a "shower" effect to prepare the arsenic for removal. Once the water is in the reaction vessel, a small amount of iron and a chlorine-based oxidant (common bleach) are added. An Arduino-controlled Servo Motor then manages the agitation: a brief period of rapid mixing distributes the reagents, followed by a slower "flocculation" phase where the arsenic binds to the iron, forming visible clusters known as flocs.</p>
+                </div>
+
+                <hr>
+
+                <div id="etapa2">
+                    <h3>STEP 2: Sedimentation by Gravity</h3>
+                    <p>To separate the contaminants from the water, the system enters a programmed 15-minute rest period. During this time, gravity pulls the heavy arsenic-laden flocs to the bottom of the container. This stage is crucial for ensuring that the majority of the concentrated pollutants are left behind as a sediment layer, allowing only the clarified water from the top to proceed to the next phase.</p>
+                </div>
+
+                <hr>
+
+                <div id="etapa3">
+                    <h3>STEP 3: Filtration</h3>
+                    <p>The pre-treated water is then directed through a filtration column made from a recycled PET bottle. This column contains graduated layers of fine sand and gravel. As the water percolates through the sand, it acts as a microscopic sieve, capturing any remaining particles or small flocs that did not settle during the sedimentation stage. The gravel at the base provides structural support and ensures a steady, unobstructed flow.</p>
+                </div>
+
+                <hr>
+
+                <div id="etapa4">
+                    <h3>STEP 4: Final filtration</h3>
+                    <p>In the final stage, the water passes through a polishing cartridge containing fine textile and activated carbon. This serves as a secondary safety barrier to ensure the highest possible water quality. While the textile traps the finest suspended solids, the activated carbon removes residual chlorine odors and improves the overall taste. The result is crystal-clear water that is significantly safer for use.</p>
+                </div>
+            </div>
+
+            <div class="contenedor">   
+                <div class="caja caja1"></div>
+                <div class="caja caja2"></div>
+                <div class="caja caja3"></div>
+                <div class="caja caja4"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="basico">
+        <p> © 2026 WATER LEAGUE - Colegio del Arce</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <link rel="stylesheet" type="text/css" href="css/prototipo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="barra-superior"> 
+        <div class="marca"> 
+            <img id="gota" src="imagenes/gotaagua.webp" width="30px">
+            <h4 id="logo"> WATER LEAGUE </h4>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href= "index2.html"> Home</a></li>
+                <li><a href= "problematica1.html"> Challenges</a></li>
+                <li><a href= "solucion.html"> Solution</a></li>
+                <li><a href= "prototipo.html"> Prototype</a></li>
+                <li><a href= "nosotros.html"> About Us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section>
+            <h1 id="titulo">Prototype</h1>
+            <p id="subtitulo">In Argentina, access to safe water faces a challenge that does not stem from industrial activity, but from the earth itself. That is why we propose this "problem-solving" solution with the aim of improving the lives of many communities.</p>
+            <hr class="linea">
+        </section>
+        <section class="contenedor">
+
+            <div class="contenedor-logo-arduino">
+                <img src="imagenes/logoarduino.png" class="logo-arduino">
+                <img src="imagenes/arduino.png" class="imagen-arduino">
+            </div>
+
+            <div class="explicacion">
+
+                <h2 class="titulo">The Arduino Control System</h2>
+                <p class="texto">Hardware Components</p>
+        
+                <div class="pasos-">
+                    <div class="paso">
+                        <div class="numero">1</div>
+                        <div class="texto1">
+                            <p>Microcontroller: Arduino (Uno or Nano) managing the logic.</p>
+                        
+                        </div>
+                    </div>
+
+                    <div class="paso">
+                        <div class="numero">2</div>
+                        <div class="texto1">
+                            <p>Relay Module: Acts as a bridge between the low-voltage Arduino and the high-voltage pumps and motors.</p>
+                           
+                        </div>
+                    </div>
+
+                    <div class="paso">
+                        <div class="numero">3</div>
+                        <div class="texto1">
+                            <p>Actuators: Peristaltic or Submersible Pumps: For water transfer.</p>
+                            <ul id="items">
+                                <li>DC Motor / Stepper Motor: To drive the agitator paddle.</li>
+                                <li>Solenoid Valve: To control gravity-fed flow.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="paso">
+                        <div class="numero">4</div>
+                        <div class="texto1">
+                            <p>Sensors: Ultrasonic Sensor (HC-SR04): To monitor tank levels and prevent overflows.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="paso">
+                        <div class="numero">5</div>
+                        <div class="texto1">
+                            <p>User Interface: LCD Display (16x2 with I2C): Displays real-time water status, tank levels, and system alerts.</p>
+                            <ul id="items">
+                                <li>I2C Module: To reduce the number of wires connected to the Arduino (only 4 pins).</li>
+                                <li>Real-time monitoring: Shows if the water is "Filtering", "Full", or if there is an "Arsenic Alert".</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imgproceso">
+                <img src="imagenes/diagrama-proceso.png" class="img-diagrama">
+                
+            </div>
+
+        </section>
+
+        <section class="lista">
+            <h2>MATERIALS</h2>
+            <div class="materialeslista"> 
+                <div class="material">
+                    <img src="imagenes/balde.png">
+                    <p>2 Reactors (bottles)</p>
+                </div>
+
+                <div class="material">
+                    <img src="imagenes/lavandina.png">
+                    <p>Bleach</p>
+                </div>
+
+                <div class="material">
+                    <img src="imagenes/hierro.png">
+                    <p>Iron</p>
+                </div>
+
+                <div class="material">
+                    <img src="imagenes/arena.png">
+                    <p>Fine quartz sand</p>
+                </div>
+
+                <div class="material">
+                    <img src="imagenes/grava.png">
+                    <p>Fine gravel</p>
+                </div>
+
+                <div class="material">
+                    <img src="imagenes/tela.webp">
+                    <p>Cotton or fine cloth</p>
+                </div>
+
+                <div class="material">
+                    <img src="imagenes/carbon.png">
+                    <p>Activated carbon</p>
+                </div>
+
+                <div class="material">
+                    <img src="imagenes/botella.png">
+                    <p>PET Bottle</p>
+                </div>
+
+                <div class="material">
+                    <img src="imagenes/tubo.png">
+                    <p>Plastic tubing</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="boceto">
+            <h2>PROTOTYPE SKETCH</h2>
+            <p class="descripcion"> This image illustrates the process and development of the prototype’s core concept, featuring a system designed to combine various water filtration and purification methods to ensure safety for human consumption.</p>
+            <div class="imagenboceto">
+                <img src="imagenes/boceto.jpg" class="imag">
+            </div>
+        </section>
+
+        <section class="resultado">
+            <h2>EXPECTED OUTCOME</h2>
+            <div class="resultadoimg">
+                <img src="imagenes/resultado.png" class="imgr">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="basico">
+        <p> © 2026 WATER LEAGUE - Colegio del Arce</p>
+    </footer>
+    
+</body>
+</html>

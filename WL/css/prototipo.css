@@ -1,0 +1,417 @@
+*{ 
+   font-family: "Alatsi", sans-serif;
+   font-style: normal;
+   margin:0;
+   padding: 1px;
+   font-size: 23px;
+}
+
+
+body{
+   background: linear-gradient(to bottom, #022f40, #38aecc, #022f40);
+  
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;      
+  
+   min-height: 100vh;           
+   font-size: 20px;
+}
+
+
+.barra-superior{
+   display: flex;
+   margin: 5px 10px;
+   padding: 1px 10px;
+
+
+   border: 2px solid #79beee;
+   border-radius: 25px;
+
+
+   background-color:rgba(9, 42, 51, 0.95);
+   position: fixed;
+   z-index: 1000;
+}
+
+
+.marca{
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   flex-shrink: 0;
+}
+
+
+#gota{
+   padding: 0;
+   width: 25px;
+   height: auto;
+   display: block;
+}
+
+
+#logo{
+   font-size: 27px;
+   margin: 0;
+   color: #d2efff;
+}
+
+
+.menu{
+   display: flex;
+   margin-left:200px;
+   width:1050px;
+}
+
+
+.menu ul{
+   display: flex;
+   list-style: none;
+   gap: 60px;
+   margin: 8px;
+   padding: 10px;
+   font-size: 22px;
+}
+
+
+.menu li a {
+   color: #d2efff;
+   display: inline-block;
+   text-decoration: none;
+  
+ 
+   padding: 5px 15px;
+   border: 2px transparent;
+   border-radius: 30px;
+  
+ 
+   transition: all 0.3s ease;
+}
+
+
+.menu li a:hover {
+   color: #022f40;
+   background-color: #a8e2ff;
+  
+   border-color: #e0f2ff;
+
+
+   transform: scale(1.1);
+}
+
+
+main.basico{
+   color: #d2efff;
+}
+
+
+#titulo{
+   font-family: "Archivo Black", sans-serif;
+   font-style: bold;
+
+
+   margin-top:170px;
+   margin-bottom: 0;
+
+
+   display: block;
+   font-size: 80px;
+   padding: 0 43px;
+   color:#e4f4ff;
+}
+
+
+#subtitulo{
+   display: block;
+   font-size: 19px;
+   padding: 0 43px;
+   text-align: left;
+   max-width: 800px;
+   margin-top: 10px;
+   color:#a8e2ff;
+}
+
+
+.linea{
+   border: none;
+   border-bottom: 4px solid;
+   color:#21738b;
+
+
+   width: 400px;
+   margin-top: 30px;
+   margin-left: 43px;
+}
+
+.contenedor {
+   position: relative; 
+   display: flex;
+   background-color: rgba(16, 28, 42, 0.6);
+   margin: 50px;
+   margin-left: 110px;
+   max-width: 1200px;
+   padding: 40px;
+   border-radius: 40px;
+   border: 2px solid #63a9d0;
+   color: #d2efff;
+   gap: 30px;
+}
+
+
+.contenedor-logo-arduino {
+   position: absolute;
+   top: 25px;    
+   right: 30px;  
+   width: 150px;  
+   height: auto;
+   z-index: 100; 
+}
+
+.logo-arduino {
+   width: 100%;
+   height: auto;
+   transition: transform 0.3s ease;
+}
+
+
+.imagen-arduino {
+   position: absolute;
+   top: 0;
+   right: 70px;
+   width: 350px; 
+   border-radius: 20px;
+   border: 1px solid #79beee;
+   box-shadow: 0px 15px 40px rgba(0,0,0,0.7);
+    
+   transform: scale(0);
+   transform-origin: top right;
+   transition: transform 0.5s;
+   
+}
+
+.contenedor-logo-arduino:hover .imagen-arduino {
+   transform: scale(1.7);
+   opacity: 1;
+}
+
+.contenedor-logo-arduino:hover .logo-arduino {
+   transform: rotate(15deg); 
+}
+
+.explicacion {
+   flex: 1;
+}
+
+.titulo {
+   font-family: "Archivo Black", sans-serif;
+   font-size: 32px;
+   margin-bottom: 20px;
+}
+
+
+.texto {
+   font-weight: bold;
+   margin-bottom: 25px;
+}
+
+
+.pasos {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+
+.paso {
+   display: flex;
+   align-items: flex-start;
+   gap: 15px;
+}
+
+.numero {
+   background-color: #022f40;
+   color: white;
+   width: 30px;
+   height: 30px;
+
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   font-weight: bold;
+   flex-shrink: 0;
+   margin-top: 5px;
+}
+
+.texto1 p {
+   font-size: 22px;
+   margin-top: 4px;
+    
+}
+
+#items li {
+   font-size: 20px;
+   margin-left: 40px;
+}
+
+
+.imagen-proceso {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+
+.img-diagrama {
+   width: 100%;
+   height: auto;
+}
+
+
+.lista {
+   margin: 40px;
+   margin-left: 110px;
+   max-width: 1280px;
+}
+
+
+.lista h2 {
+   color: #e4f4ff;
+   font-family: "Archivo Black", sans-serif;
+   margin-top: 30px;
+   margin-bottom: 25px;
+   font-size: 40px;
+}
+
+
+.materialeslista {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+   
+}
+
+
+.material {
+   background: rgba(228, 244, 255, 0.9);
+   display: flex;
+   align-items: center;
+   font-size: 20px;
+   gap: 15px;
+   padding: 12px 20px;
+   border-radius: 15px;
+   min-width: 250px;
+   flex: 1 1 280px;
+   border: 1px solid #79beee;
+
+
+   transition: all 0.3s ease;
+   transform:scale(0.9);
+  
+}
+
+
+.material:hover{
+   transform: scale(1.1);
+}
+.material img {
+   width: 45px;
+   height: auto;
+}
+
+
+.material p {
+   color: #022f40;
+   font-weight: bold;
+   margin: 0;
+   font-size: 18px;
+}
+
+
+.boceto {
+   margin-left: 110px;
+   margin-top: 60px;
+   margin-bottom: 60px;
+   max-width: 1200px;
+   
+}
+
+
+.boceto h2 {
+   font-family: "Archivo Black", sans-serif;
+   color: #e4f4ff;
+   font-size: 40px;
+   margin-bottom: 15px;
+}
+
+
+.descripcion{
+   color: #a8e2ff;
+   font-size: 19px;
+   line-height: 1.6;
+   margin-bottom: 30px;
+   max-width: 1200px;
+}
+
+
+.imagenboceto {
+   width: 800px;
+   
+   display: flex;
+   justify-content: flex-start;
+}
+
+
+.imag {
+   width: 100%;
+   height: auto;
+   border-radius: 20px;
+   border: 3px solid rgba(121, 190, 238, 0.5);
+   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.resultado {
+   margin-left: 110px;
+   margin-top: 60px;
+   margin-bottom: 60px;
+   max-width: 1200px;
+}
+
+.resultado h2 {
+   font-family: "Archivo Black", sans-serif;
+   color: #e4f4ff;
+   font-size: 40px;
+   margin-bottom: 15px;
+}
+
+.resultadoimg {
+   width: 1100px;
+   height: 580px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+
+.imgr {
+   width: 100%;
+   height: auto;
+   border-radius: 20px;
+   border: 3px solid rgba(121, 190, 238, 0.5);
+   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+
+footer.basico{
+   display: flex;
+   font-size: 20px;
+   color: #ffffff;
+   justify-content:center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}

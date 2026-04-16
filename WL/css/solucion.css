@@ -1,0 +1,342 @@
+*{ 
+   font-family: "Alatsi", sans-serif;
+   font-style: normal;
+   margin:0;
+   padding: 1px;
+   font-size: 23px;
+}
+
+
+body{
+   background: linear-gradient(to bottom, #022f40, #38aecc, #022f40);
+  
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;      
+  
+   min-height: 100vh;           
+   font-size: 20px;
+}
+
+
+.barra-superior{
+   display: flex;
+   margin: 5px 10px;
+   padding: 1px 10px;
+
+
+   border: 2px solid #79beee;
+   border-radius: 25px;
+
+
+   background-color:rgba(9, 42, 51, 0.95);
+   position: fixed;
+   z-index: 1000;
+}
+
+
+.marca{
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   flex-shrink: 0;
+}
+
+
+#gota{
+   padding: 0;
+   width: 25px;
+   height: auto;
+   display: block;
+}
+
+#logo{
+   font-size: 27px;
+   margin: 0;
+   color: #d2efff;
+}
+
+.menu{
+   display: flex;
+   margin-left:200px;
+   width:1050px;
+}
+
+.menu ul{
+   display: flex;
+   list-style: none;
+   gap: 60px;
+   margin: 8px;
+   padding: 10px;
+   font-size: 22px;
+}
+
+.menu li a {
+   color: #d2efff;
+   display: inline-block;
+   text-decoration: none;
+  
+ 
+   padding: 5px 15px;
+   border: 2px transparent;
+   border-radius: 30px;
+  
+ 
+   transition: all 0.3s ease;
+}
+
+
+.menu li a:hover {
+   color: #022f40;
+   background-color: #a8e2ff;
+  
+   border-color: #e0f2ff;
+
+
+   transform: scale(1.1);
+}
+
+main.basico{
+    color: #d2efff;
+}
+
+#titulo{
+    font-family: "Archivo Black", sans-serif;
+    font-style: bold;
+
+    margin-top:170px;
+    margin-bottom: 0;
+
+    display: block;
+    font-size: 80px;
+    padding: 0 43px;
+    color:#e4f4ff;
+}
+
+#subtitulo{
+    display: block;
+    font-size: 19px;
+    padding: 0 43px;
+    text-align: left;
+    max-width: 800px;
+    margin-top: 10px;
+    color:#a8e2ff;
+}
+
+.linea{
+    border: none;
+    border-bottom: 4px solid;
+    color:#63a9d0;
+
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 43px;
+}
+
+#sep1{
+    margin-top: 30px;
+    margin-left: 110px;
+}
+
+#titulo1{
+    margin-top: 15px;
+    margin-left: 110px;
+}
+
+.pestañas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+#pestaña1, #pestaña2, #pestaña3 {
+    margin-top: 20px;
+    perspective: 1000px; 
+    background-color: transparent; 
+    
+    padding: 0;
+    width: 400px;
+    height: 350px; 
+}
+
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+    border-radius: 45px;
+    border: 2px solid #3685AD;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+.flip-card-front {
+    background-color: rgba(16, 28, 42, 0.6);
+    color: #d2efff;
+}
+
+
+.flip-card-back {
+    background-color: #022f40;
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.flip-card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 15px;
+}
+
+.aviso{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+    
+    max-width: 1250px;
+    max-height: 400px;
+    padding: 0 10px;
+    margin: 20px 90px;
+
+    border: 2px solid #9a2d1c;
+    padding: 22px;         
+    border-radius: 45px; 
+    background-color: rgba(167, 0, 0, 0.5);
+    color:#ffefe4;
+}
+
+#numero{
+    border: #b5270e solid 2px;
+    border-radius: 45px;
+    max-width: 350px;
+    background-color: rgba(245, 128, 33, 0.2);
+    color:rgb(255, 150, 22);
+    padding: 8px;
+    margin: 5px;
+}
+
+#infopes1{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#expl1{
+    margin-top: 60px;
+    font-size: 20px;
+    margin-left: 110px;
+    line-height: 1.8;
+    max-width: 1200px;
+}
+
+.linea2{
+    border: none;
+    border-bottom: 4px solid;
+    color:#63a9d0;
+
+    width: 1250px;
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+.etapas{
+    font-size: 20px;
+    margin-left: 110px;
+    margin-top: 50px;
+    line-height: 1.5;
+    max-width: 1200px;
+
+    border:#79beee solid 2px;
+    border-radius: 45px;
+    background-color: rgba(16, 28, 42, 0.3);
+    padding: 30px;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid;
+    color: #3685AD;
+}
+
+.contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.caja{
+    box-sizing: border-box;
+    margin-top: 40px;
+    height: 450px;
+
+    display: flex;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    
+
+}
+
+.caja1{
+    margin-left:100px;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../imagenes/floculacion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-basis: 200px;
+}
+.caja2{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../imagenes/test.webp);
+    
+    flex-basis: 200px;
+ 
+    background-position: 40% 100%; 
+    background-repeat: no-repeat;
+   
+}
+.caja3{
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../imagenes/coagulation.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-basis: 600px;
+}
+
+
+
+footer.basico{
+    display: flex;
+    font-size: 20px;
+    color: #ffffff;
+    justify-content:center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
