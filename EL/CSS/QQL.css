@@ -1,0 +1,304 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap');
+
+/* BASE */
+body{
+    font-family: "Chiron GoRound TC", sans-serif;
+    background-color: #ffffff;
+ 
+}
+
+/* NAVBAR */
+nav {
+   background-color: rgb(216, 216, 216);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+   background-color: #00cc66;
+    color: #535353;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+nav a:hover {
+  background-color: #019c4e;
+}
+
+/* LOGO */
+#logo{
+    font-family: "Bungee", sans-serif;
+    color: #66cc33;
+    font-size: 40px;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    font-family: "Bungee", sans-serif;
+    color: #7ffc41;
+}
+
+header h1{
+    font-size: 60px;
+}
+
+header img{
+    width: 200px;
+}
+
+/* OBJETIVO GENERAL */
+.contenido-general{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#66cc33 ;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* TEXTO OBJETIVO GENERAL */
+
+.texto-general h2{
+    font-family: "Bungee", sans-serif;
+    text-align: center;
+}
+
+.texto-general p{
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* IMAGEN OBJETIVO GENERAL */
+.objetivos{
+    width: 250px;
+    margin-left: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* OBJETIVOS ESPECIFICOS*/
+h2{  
+font-family: "Bungee", sans-serif;
+text-align: center;
+padding: 30px 20px;
+}
+
+
+
+/* QUITO LA LISTA NORMAL*/
+.lista-objetivos ol{
+    list-style: none;
+    counter-reset: item;
+
+}
+
+
+.lista-objetivos li:hover{
+    transform: translateX(5px);
+}
+
+.lista-objetivos li::before{
+    content: counter(item);
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 28px;
+    background: #509f28;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* FONDO OBJETIVOS ESPECIFICOS */
+.lista-objetivos{
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 40px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* TARJETAS OBJETIVOS */
+.lista-objetivos li{
+    counter-increment:item; 
+
+    margin-bottom: 10px;
+
+    padding: 18px 18px 18px 60px;
+
+    border-radius: 15px;
+
+    position: relative;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+
+    background-color: #4ae64591;
+}
+
+.lista-objetivos li:hover{
+    transform: translateX(8px);
+}
+
+/* PROBLEMA GENERAL PARRAFO */
+.problema-general{
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+}
+
+/* GALERIA PROBLEMAS ESPECIFICOS (HOVER) */
+.container-problemas{
+    width: 100%;
+    padding: 20px;
+}
+
+.galeria-problemas{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+
+/* BLOQUE GENERAL PROBLEMATICA */
+.bloque-problema{
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* TEXTO DE GENERAL PROBLEMATICA */
+.bloque-problema h2{
+    text-align: center;
+    font-family: "Bungee", sans-serif;
+    line-height: 1.6;
+}
+
+
+
+/* TARJETAS GALERIA */
+.galeria-problemas li{
+    position: relative;
+    flex: 1;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: flex 0.5s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.galeria-problemas li:hover{
+    flex: 3;
+}
+
+.galeria-problemas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria-problemas .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 15px;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.galeria-problemas li:hover .content{
+    opacity: 1;
+}
+
+
+
+
+/* TITULO DE LA SOLUCION */
+
+.solucion-proyecto h2{
+    background: linear-gradient(135deg, #9dff9a, #66cc33);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px 0;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+
+
+/* TEXTOS */
+
+.texto-solucion{
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+  
+}
+
+/*TITULOS*/
+h3{
+    margin: 40px 0;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    background-color: #94ff5f;
+}
+
+
+img{
+
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 500px;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #40db3b;
+    text-align: center;
+    padding: 12px;
+    color: black;
+}
